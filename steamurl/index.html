@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
+    <title>SteamID Profile Converter</title>
+    <link rel="stylesheet" href="style-steamid.css">
+</head>
+<body>
+
+    <div style="text-align: center;" class="container">
+    
+        <h1 style="text-align: center;">Steam Profile URL to SteamID3</h1>
+
+    <input type="text" id="manualInput" placeholder="Paste Steam profile URL here">
+    <button onclick="processManualInput()">Process URL</button>
+    <br>
+    <label>
+        <input type="checkbox" id="showSteamID3"> Display only SteamID3
+    </label>
+    <center>
+        <label for="fileInput" class="custom-file-upload"> Input multiple URLs </label>
+    </center>
+<input type="file" id="fileInput" class="custom-file-upload" >
+
+    <button onclick="processFile()">Process File</button>
+
+    <textarea id="output" style="resize: none;" readonly placeholder="SteamIDs will appear here, Click to copy them."></textarea>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
